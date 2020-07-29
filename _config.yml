@@ -284,8 +284,8 @@ defaults:
       related: true
   # _pages
   - scope:
-    path: ""
-    type: pages
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
