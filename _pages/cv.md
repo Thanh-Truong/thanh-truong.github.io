@@ -1,20 +1,18 @@
 ---
-permalink: /about
+permalink: /cv
 title: "Curriculum Vitae"
 excerpt: "About me."
 last_modified_at: 2020-05-01T10:15:22-04:00
-toc: true
+#toc: true
 author_profile: true
-redirect_from: 
-  - /
-  - /about.html
+layout: single
 ---
 <p> I am a software developer and database researcher whose passion is building data-intensive applications.<br>
 
 I have a solid background in data and database with overall 8 years of hands-on experience in database theory and in implementing database kernel components: indexing, storage, and query processor.<br>
 
 I owned a PhD degree in Database Technology and a Master degree of Computer Science both at Uppsala University, Sweden.
- </p>
+</p>
 <style>
 .mark_black {
   background-color: black;
@@ -34,16 +32,22 @@ table, th, td {
   vertical-align: top; 
   font-weight: normal;
   font-family: Arial; 
-  font-size: 13pt;
+  font-size: 15pt;
 }
+.subhead {
+  font-size: 15pt;
+  font-style: bold;
+  #color: yellow;
+} 
+
 .newspaper {
   column-count: 2;
 }
 </style>
 
-<h1><mark class="mark_black">Keywords&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark></h1>
+<h1>Keywords</h1>
 <div class="newspaper">
-  <h3>interests</h3>
+  <p class="subhead">interests</p>
   <ul>
     <li>distributed and scalable systems</li>
     <li><mark>big data, data engineer, data science</mark></li>
@@ -51,25 +55,25 @@ table, th, td {
     <li><mark>machine learning</mark></li>
     <li>data infrastructure</li>
   </ul>
-  <h3>programming</h3>
+  <p class="subhead">programming</p>
   <ul>
     <li>C, C++</li>
     <li>Python, Java, Lisp</li>
   </ul>
-  <h3>databases</h3>
+  <p class="subhead">databases</p>
   <ul>
     <li>SQL</li>
     <li>Specialized in <mark>database indexes</mark></li>
     <li>and query optimisation</li>
   </ul>
   <br>
-  <h3>development</h3>
+  <p class="subhead">development</p>
   <ul>
     <li>CI-CD, Travis, Github Action, Cloud Build</li>
     <li>Agile, Kanban, or Scrum </li>
     <li>Systems Development Life Cycle - Life Cycle Phases</li>
   </ul>
-  <h3>tools</h3>
+  <p class="subhead">tools</p>
   <ul>
     <li>Google Cloud Platform: BigQuery, App Enginee, etc</li>
     <li>Airflow</li>
@@ -77,14 +81,14 @@ table, th, td {
     <li>Kubernetes, Docker</li>
     <li>Helm</li>
   </ul>
-  <h3>others</h3>
+  <p class="subhead">others</p>
   <ul>
     <li>problem solving</li>
     <li><mark>fika</mark></li>
   </ul>
 </div>
 
-<h1><mark class="mark_black">Experience&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark></h1>
+<h1>Experience</h1>
 
 <table>
   <tr>
@@ -131,7 +135,7 @@ table, th, td {
   </tr>
 </table>
 
-<h1><mark class="mark_black">Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark></h1>
+<h1>Education</h1>
 
 <table>
   <tr>
@@ -154,7 +158,7 @@ table, th, td {
   </tr>
 </table>
 
-<h1><mark class="mark_black">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark></h1>
+<h1>Projects</h1>
 
 Followings are selective and recent projects which I can hold throughful discussions about.
 
