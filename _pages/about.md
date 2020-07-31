@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-This is a software developer and a former database researcher whose passion is building data-intensive applications.
+I am a software developer and a former database researcher whose passion is building data-intensive applications.
 
 I am currently working as Data Engineer (or Data Magician) at one of the biggest TV channels in Nordic, [TV4](https://tv4.se) Stockholm, Sweden.
 
