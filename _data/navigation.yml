@@ -5,7 +5,7 @@ main:
   - title: "About"
     url: /
   - title: "Technical notes"
-    url: /_pages/ndex.html/
+    url: /_pages/index.html/
   - title: "Archive"
     url: /year-archive/
   # - title: "Sample Collections"
