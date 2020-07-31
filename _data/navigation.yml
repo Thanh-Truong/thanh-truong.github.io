@@ -4,7 +4,9 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /
-  - title: "Developer Notes"
+  - title: "Developer notes"
+    url: /developer-notes/
+  - title: "Archive"
     url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
