@@ -11,6 +11,8 @@ toc: true
 
 I earned a PhD degree in Database Technology and a Master degree of Computer Science both at [Uppsala University](https://www.uu.se/), Sweden. Among other research works, I have an [important publication](https://streamanalyze.com/research/) that contributed to the foundation of [StreamAnalyze AB](https://streamanalyze.com/).
 
+Prior to this, I had started my sofware developer career since 2005 and developed desktop applications and web applications.
+
 <style>
 .mark_black {
   background-color: black;
@@ -47,9 +49,9 @@ table, th, td {
   - programming
     - C, C++
     - Python, Java, Lisp
-    - cloud services  
   - databases
-    - SQL
+    - SQL-based technologies(e.g MySQL, PostgreSQL, Microsoft Server)
+    - NoSQL technologies (e.g. Cassandra and MongoDB)
     - Specialized in <mark>database indexes</mark>
     - and query optimisation
   - development
@@ -57,8 +59,11 @@ table, th, td {
     - Agile, Kanban, or Scrum
     - Systems Development Life Cycle - Life Cycle Phases
   - tools
+    - Knowledge of Hadoop ecosystem and different frameworks: HDFS, YARN, MapReduce, Apache Pig, Hive, and Kafka.
+    - Real-time processing Framework (e.g Apache Spark, Apache Beam)
     - Google Cloud Platform: BigQuery, App Enginee, etc
-    - Airflow, Apache Beam, Elastic Search, Kibana
+    - ETL
+    - Airflow, Elastic Search, Kibana
     - Kubernetes, Docker, Helm charts
     - Ngnix, Let's Encrypt
   - others
