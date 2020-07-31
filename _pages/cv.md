@@ -1,5 +1,5 @@
 ---
-permalink: /cv
+permalink: /cv/
 title: "Curriculum Vitae"
 excerpt: "About me."
 last_modified_at: 2020-07-29T10:15:22-04:00
