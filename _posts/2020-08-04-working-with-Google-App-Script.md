@@ -1,6 +1,6 @@
 ---
-title: 'Introduction to Mexima'
-date: 2010-12-28
+title: 'Working with Google App Script'
+date: 2020-08-04
 permalink: /posts/2020/08/working-with-Google-App-Script/
 tags:
   - google
