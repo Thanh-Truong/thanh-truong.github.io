@@ -1,5 +1,5 @@
 ---
-title: 'Out from the shadows'
+title: 'Out from the shadow'
 date: 2020-07-29
 permalink: /posts/2020/07/out-from-the-shadows/
 tags:
