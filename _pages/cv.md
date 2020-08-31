@@ -11,7 +11,7 @@ toc: true
 
 I earned a PhD degree in Database Technology and a Master degree of Computer Science both at [Uppsala University](https://www.uu.se/), Sweden. Among other research works, I have an [important publication](https://streamanalyze.com/research/) that contributed to the foundation of [StreamAnalyze AB](https://streamanalyze.com/).
 
-Prior to this, I had started my sofware developer career since 2005 and developed desktop applications and web applications.
+Prior to this, I had started my sofware developer career since 2005 primarily developing desktop applications and web applications.
 
 <style>
 .mark_black {
