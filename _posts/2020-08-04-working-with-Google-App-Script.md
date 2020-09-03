@@ -35,11 +35,17 @@ https://github.com/google/clasp/blob/master/docs/run.md
 # Setup your local environment
 
 * Login globally
-`clasp login` 
+{% highlight shell %}
+clasp login
+{% endhighlight %}
 
 # How to change source
 * Make changes locally
-* `clasp push` to push changes to script.google
+* Then
+{% highlight shell %} 
+clasp push
+{% endhighlight %}
+to push changes to script.google
 * Commit to github
 
 # How run functions
@@ -49,8 +55,14 @@ https://github.com/google/clasp/blob/master/docs/run.md
 The `creds.json` can be obtained from https://console.developers.google.com/apis/credentials?project=ID by downloading OAuth 2.0 Client IDs for application `Clasp`.
 
 
-* Then `clasp run`
+* Then
+{% highlight shell %}
+clasp run
+{% endhighlight %}
 
 Open webapp
 
-`clasp open --webapp`
+{% highlight shell %}
+clasp open --webapp
+{% endhighlight %}
+
