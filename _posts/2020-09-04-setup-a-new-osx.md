@@ -71,3 +71,4 @@ Simply choose a theme you like for example
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="pygmalion"
 ```
+To be continued
