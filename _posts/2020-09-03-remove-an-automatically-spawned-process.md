@@ -5,7 +5,7 @@ permalink: /posts/2020/09/remove-an-automatically-spawned-process/
 tags:
   - osx
   - bash
-published: false
+published: true
 excerpt: ""
 ---
 This note was inspired by a [discussion](https://apple.stackexchange.com/questions/25287/how-do-you-prevent-a-process-from-automatically-restarting-specifically-sopho) on StackOverflow.
@@ -31,3 +31,4 @@ thtru             7002   0,0  0,0  6110104  15244   ??  SN   10:03pm   0:02.83 /
 
 As expected we could not find who is the parent process but we got a hint that was indeed a system process.
 
+To be continued
