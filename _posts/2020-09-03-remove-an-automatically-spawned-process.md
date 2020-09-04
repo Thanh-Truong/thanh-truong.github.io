@@ -10,7 +10,7 @@ excerpt: ""
 ---
 This note was inspired by a [discussion](https://apple.stackexchange.com/questions/25287/how-do-you-prevent-a-process-from-automatically-restarting-specifically-sopho) on StackOverflow.
 
-Recently I got a new computer from work and it was pre-installed with some softwares from IT support service. Some of them are useful to aid IT support to remotely install packages on my computer while some aim at collecting logs or controlling network usage. I have no problem running them when needed but they are auto launched at startup, which are unwanted background processes. And that is what I don't like about them. Killing them all does not work as they are automatically spawned by `launchctl`.
+Recently I got a new computer from work and it was pre-installed with some softwares from IT support service. Some of them are useful to aid IT support to remotely install packages on my computer while some aim at collecting logs or controlling network usage. I have no problem running them when needed but they are auto launched at startup, which are unwanted background processes. And that is what I don't like about them. Killing them all does not work as they are automatically spawned mysteriously.
 
 So here is how I contain them in more control manner. To give a concrete example of such preinstalled software, I use [`MacApp Kiosk`](https://www.filewave.com/management/self-service), which has executable process called as `FileWave.app`. This knowledge can be obtained by using `Activity Monitor` tool shipped in any OSX.
 
@@ -47,5 +47,43 @@ com.filewave.fwGUI.plist
 {% endhighlight %}
 
  The file contains several parameter and we can see it has `KeepAlive` parameter, which is exactly we don't want to have. Remove this parameter will stop `FileWave` app to be spawned after we kill it manually.
+```
+...
+<plist version="1.0">
+<dict>
+    <key>KeepAlive</key>
+    <false/>
 
- To completely suppress `FileWave` from running when we login, we can go ahead and remove the plist file.
+    <key>Label</key>
+    <string>com.filewave.fwGUI</string>
+
+    <key>LowPriorityIO</key>
+    <true/>
+
+    <key>Nice</key>
+    <integer>20</integer>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+            <key>QT_MAC_DISABLE_FOREGROUND_APPLICATION_TRANSFORM</key>
+            <string>1</string>
+    </dict>
+
+    <key>ProgramArguments</key>
+    <array>
+            <string>/usr/local/sbin/FileWave.app/Contents/Resources/fwGUI.app/Contents/MacOS/fwGUI</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>LimitLoadToSessionType</key>
+    <array>
+            <string>LoginWindow</string>
+            <string>Aqua</string>
+    </array>
+
+</dict>
+</plist>
+```
+ To completely suppress `FileWave` from running when we login, we can go ahead and remove the plist file. Another nicer approach is to flip the boolean value of the parameter `RunAtLoad`
