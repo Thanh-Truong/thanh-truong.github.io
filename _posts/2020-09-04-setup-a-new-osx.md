@@ -1,5 +1,5 @@
 ---
-title: '2020-09-04-setup-a-new-osx'
+title: 'Setup a new coding environment on OSX'
 date: 2020-09-04
 permalink: /posts/2020/09/setup-a-new-osx/
 tags:
