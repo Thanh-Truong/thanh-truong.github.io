@@ -1,0 +1,60 @@
+---
+title: '2020-09-04-setup-a-new-osx'
+date: 2020-09-04
+permalink: /posts/2020/09/setup-a-new-osx/
+tags:
+  - osx
+  - bash
+published: true
+excerpt: ""
+---
+# Setup coding tools on OSX
+
+Everything should be installed via [Homebrew](https://brew.sh/index_sv) for the sake of simplicity and ease of uninstallation
+
+## Install Homebrew
+
+{% highlight shell %}
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+{% endhighlight %}
+
+It is quite common to be confused between `brew` and `brew cask`. In the nut shell, `brew` installs command-line softwares while `brew cask`installs graphical applications and it deals with licencees.
+
+## Install git with ssh
+
+I find my old post about [Git and SSH](/posts/2018/04/configuration-git/) useful indeed
+
+## Install Oh My Zsh
+This [Oh My Zsh](https://ohmyz.sh) is a framework built to manage [Zsh](https://www.zsh.org/) configuration. In its own world, Zsh is a nicely designed interactive shell that I love to use when I develop. There are some better alternatives but I haven't got time to try them out.
+
+* First step is off course, install Zsh
+{% highlight shell %}
+brew install zsh
+{% endhighlight %}
+
+More instructions about how to install Zsh on different OS can be found [here] 
+(https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+
+* Invoke `zsh` for the first time will take you to the configuration menu where a shitload of options to be configured. The result should be a `.zshsrc` file
+more ~/.zshrc
+{% highlight shell %}
+brew install zsh
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt nomatch
+unsetopt autocd beep
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/thtru/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+{% endhighlight %}
+
+* Themes
+
