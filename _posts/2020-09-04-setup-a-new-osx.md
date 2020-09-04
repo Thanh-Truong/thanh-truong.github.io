@@ -8,8 +8,6 @@ tags:
 published: true
 excerpt: ""
 ---
-# Setup coding tools on OSX
-
 Everything should be installed via [Homebrew](https://brew.sh/index_sv) for the sake of simplicity and ease of uninstallation
 
 ## Install Homebrew
