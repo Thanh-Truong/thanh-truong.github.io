@@ -24,6 +24,14 @@ It is quite common to be confused between `brew` and `brew cask`. In the nut she
 
 I find my old post about [Git and SSH](/posts/2018/04/configuration-git/) useful indeed
 
+## Install iTerm2
+{% highlight shell %}
+brew cask install iterm2
+{% endhighlight %}
+
+Before heading to the next headline, there is some good words here 
+https://sourabhbajaj.com/mac-setup/iTerm/zsh.html
+
 ## Install Oh My Zsh
 This [Oh My Zsh](https://ohmyz.sh) is a framework built to manage [Zsh](https://www.zsh.org/) configuration. In its own world, Zsh is a nicely designed interactive shell that I love to use when I develop. There are some better alternatives but I haven't got time to try them out.
 
@@ -57,4 +65,11 @@ compinit
 {% endhighlight %}
 
 * Themes
-
+Simply choose a theme you like for example
+```
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="pygmalion"
+```
