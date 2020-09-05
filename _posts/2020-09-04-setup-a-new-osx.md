@@ -71,4 +71,13 @@ Simply choose a theme you like for example
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="pygmalion"
 ```
+## Install Emacs
+
+Emacs is always my favourite editor especially for a quick change.
+
+```
+brew install emacs
+```
+and it is invoked with simply `emacs` command
+
 To be continued
