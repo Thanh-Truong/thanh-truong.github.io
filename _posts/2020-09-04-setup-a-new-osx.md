@@ -64,6 +64,7 @@ compinit
 
 * Themes
 Simply choose a theme you like for example
+
 ```
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,6 +72,7 @@ Simply choose a theme you like for example
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="pygmalion"
 ```
+
 ## Install Emacs
 
 Emacs is always my favourite editor especially for a quick change.
