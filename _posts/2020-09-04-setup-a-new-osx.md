@@ -73,6 +73,9 @@ Simply choose a theme you like for example
 ZSH_THEME="pygmalion"
 ```
 
+The best instruction so far for on "Powerlevel9k", a very good theme
+https://gist.github.com/kevin-smets/8568070
+
 ## Install Emacs
 
 Emacs is always my favourite editor especially for a quick change.

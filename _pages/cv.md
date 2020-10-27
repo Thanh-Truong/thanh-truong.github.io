@@ -62,6 +62,7 @@ table, th, td {
     - Knowledge of Hadoop ecosystem and different frameworks: HDFS, YARN, MapReduce, Apache Pig, Hive, and Kafka.
     - Real-time processing Framework (e.g Apache Spark, Apache Beam)
     - Google Cloud Platform: BigQuery, App Enginee, etc
+    - Microsoft Azure Cloud
     - ETL
     - Airflow, Elastic Search, Kibana
     - Kubernetes, Docker, Helm charts
@@ -73,8 +74,14 @@ table, th, td {
 ### Experience
 <table>
   <tr>
-    <td>Jul 2018 - present</td>
-    <td><b>Data Engineer - Data Magican</b><br>
+    <td>Sep 2020 - present</td>
+    <td><b>Senior Data Engineer</b><br>
+        <i><a href="https://hmgroup.com/" >H&M Group</a>Stockholm, Sweden</i>
+    </td>
+  </tr>
+  <tr>
+    <td>Jul 2018 - August 2020</td>
+    <td><b>Data Engineer</b><br>
         <i><a href="https://www.tv4.se/" >TV4</a> Media AB, Stockholm, Sweden</i>
     </td>
   </tr>
