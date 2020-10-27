@@ -18,6 +18,6 @@ I am not quite a methodical runner yet despite that I run 5 days per week all ye
 
 Recently, I have picked up on writing technical notes again. They are [here](/year-archive/). Among them, a few notes here were revived from my old Wordpress blog in between 2009 - 20016.
 
-If it was not enough to keep me busy! I am also a father of twin grils and married to a wonderful wife.  
+If it was not enough to keep me busy! I am also a father of twin girls and married to a wonderful wife.
 
-I am best reached via email as I’m always open to interesting conversations and collaboration.
+You can reach me via email as I am always open to interesting conversations and collaboration.
