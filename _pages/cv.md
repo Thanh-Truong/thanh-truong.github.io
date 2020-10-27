@@ -3,7 +3,7 @@
 title: "CV"
 permalink: /cv/
 author_profile: true
-last_modified_at: 2020-05-01T10:15:22-04:00
+last_modified_at: 2020-10-01T10:15:22-04:00
 toc: true
 ---
 <p>I am a software developer and a former database researcher whose passion is building data-intensive applications.</p>
