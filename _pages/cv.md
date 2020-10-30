@@ -9,7 +9,7 @@ toc: true
 <p>I am a software developer and a former database researcher whose passion is building data-intensive applications.</p>
 <p>I have a strong foundation in data and database with overall 8 years of hands-on experience in database theory and in implementing database kernel components: indexing, storage, and query processor.</p>
 
-I earned a PhD degree in Database Technology and a Master degree of Computer Science both at [Uppsala University](https://www.uu.se/), Sweden. Among other research works, I have an [important publication](https://streamanalyze.com/research/) that contributed to the foundation of [StreamAnalyze AB](https://streamanalyze.com/).
+I earned a PhD degree in Database Technology and a Master degree of Computer Science both at [Uppsala University](https://www.uu.se/), Sweden. Among other research works, I have an [important publication](https://streamanalyze.com/research/) that contributed to the foundation of [StreamAnalyze AB](https://streamanalyze.com/), which provides edge computing or analytic engine. 
 
 Prior to this, I had started my sofware developer career since 2005 primarily developing desktop applications and web applications.
 
