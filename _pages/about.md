@@ -9,8 +9,7 @@ redirect_from:
 ---
 I am a software developer and a former database researcher whose passion is building data-intensive applications.
 
-I am currently working as Senior Data Engineer (self-proclaimed
- Data Magician) at [H&M Group](https://hmgroup.com/), which owns several fashion brands including H&M, Arket, Weekday, COS, Monki, H&M Home, &Other Stories, and AFound.
+I am currently working as Senior Data Engineer (Data Magician) at [H&M Group](https://hmgroup.com/), which owns several fashion brands including H&M, Arket, Weekday, COS, Monki, H&M Home, &Other Stories, and AFound.
 
 Previously, I worked at [TV4](https://www.tv4.se/) and [CMore](https://www.cmore.se) as Data Engineer as successor from a Database Engineer Research position at [Starcounter AB](https://starcounter.com) working on a query optimizer. Prior to this, I spent several years at [Uppsala University](https://www.uu.se/), Sweden as database researcher. Before pursuiting research in university, I worked as software developer at Mobile Art, [Elca](https:///www.elca.vn), and [FPT](https://www.fpt-software.com/) since 2005 building desktop applications and web applications.
 
