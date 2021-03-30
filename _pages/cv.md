@@ -9,9 +9,9 @@ toc: true
 <p>I am a software developer and a former database researcher whose passion is building data-intensive applications.</p>
 <p>I have a strong foundation in data and database with overall 8 years of hands-on experience in database theory and in implementing database kernel components: indexing, storage, and query processor.</p>
 
-I earned a PhD degree in Database Technology and a Master degree of Computer Science both at [Uppsala University](https://www.uu.se/), Sweden. Among other research works, I have an [important publication](https://streamanalyze.com/research/) that contributed to the foundation of [StreamAnalyze AB](https://streamanalyze.com/), which provides edge computing or analytic engine. 
+I earned a PhD degree in Database Technology and a Master degree of Computer Science both at [Uppsala University](https://www.uu.se/), Sweden. Among other research works, I have some [research publication](https://dblp.org/pid/132/0334.html) that contributed to the foundation of [StreamAnalyze AB](https://streamanalyze.com/), which provides edge computing or analytic engine. 
 
-Prior to this, I had started my sofware developer career since 2005 primarily developing desktop applications and web applications.
+Prior to this, I had started my software developer career since 2005 primarily developing desktop applications and web applications.
 
 <style>
 .mark_black {
@@ -53,7 +53,7 @@ table, th, td {
     - SQL-based technologies(e.g MySQL, PostgreSQL, Microsoft Server)
     - NoSQL technologies (e.g. Cassandra and MongoDB)
     - Specialized in <mark>database indexes</mark>
-    - and query optimisation
+    - and query optimization
   - development
     - CI-CD, Travis, Github Action, Cloud Build
     - Agile, Kanban, or Scrum
@@ -61,7 +61,7 @@ table, th, td {
   - tools
     - Knowledge of Hadoop ecosystem and different frameworks: HDFS, YARN, MapReduce, Apache Pig, Hive, and Kafka.
     - Real-time processing Framework (e.g Apache Spark, Apache Beam)
-    - Google Cloud Platform: BigQuery, App Enginee, etc
+    - Google Cloud Platform: BigQuery, App Engine, etc
     - Microsoft Azure Cloud
     - ETL
     - Airflow, Elastic Search, Kibana
@@ -93,7 +93,7 @@ table, th, td {
   </tr>
   <tr>
     <td>Jan 2011 - May 2016</td>
-    <td><b>Reasearch & Teaching Assistant</b><br>
+    <td><b>Research & Teaching Assistant</b><br>
         <i><a href="https://www.uu.se">Uppsala University</a>, Uppsala, Sweden</i>
     </td>
   </tr>
@@ -146,7 +146,7 @@ table, th, td {
 </table>
 
 ### Projects
-Followings are selective and recent projects which I can hold throughful discussions about.
+Followings are selective and recent projects which I can hold throughout discussions about.
 
 * 2018 [C More](https://www.cmore.se/), [TV4](https://www.tv4.se) recommendation. <br> Similar TV shows, movies recommendation and personalized recommendations.
 
