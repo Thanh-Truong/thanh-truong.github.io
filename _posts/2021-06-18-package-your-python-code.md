@@ -60,3 +60,7 @@ python3 -m twine upload --repository testpypi dist/*
 ````
 pip install -i https://test.pypi.org/simple/ sample
 ````
+
+References
+- https://packaging.python.org/tutorials/packaging-projects/
+- https://packaging.python.org/specifications/pypirc/
