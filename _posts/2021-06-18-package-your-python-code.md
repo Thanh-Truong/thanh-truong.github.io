@@ -1,5 +1,5 @@
 ---
-title: 'Packaging Python Projects¶'
+title: 'Packaging Python Projects'
 date: 2021-06-18
 permalink: /posts/2021/06/package-your-python-code/
 tags:
