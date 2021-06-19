@@ -6,7 +6,7 @@ tags:
   - C++
   - Code
 published: true
-excerpt: ""
+excerpt: "In order to avoid repetition of code, which means a big No to copy-and-paste code, I need to put similar code into a macro, or a function. Considering this, macro wins over the choice of using C++ function."
 ---
 In order to avoid repetition of code, which means a big No to copy-and-paste code, I need to put similar code into a macro, or a function. Considering this, macro wins over the choice of using C++ function. This is not something new, absolutely not but it was so clumsy for my first and second attempts. Therefore, this post summarizes hopefully in a clear manner what is needed to achieve "code generation".
 
