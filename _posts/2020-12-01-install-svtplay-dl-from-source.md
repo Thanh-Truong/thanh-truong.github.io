@@ -1,6 +1,6 @@
 ---
 title: 'Install svtplay-dl from source'
-date: 2020-12-01
+date: 2021-06-18
 permalink: /posts/2020/12/install-svtplay-from-source/
 tags:
   - svtplay-dl
@@ -28,10 +28,12 @@ Then we install a bunch of required packages
 pip3 install requests
 ```
 RTMPDump 2.4 should already be installed with brew, if not:
-````
+```
 brew install rtmpdump
 ```
+
 then
+
 ```
 pip3 install cryptography
 
