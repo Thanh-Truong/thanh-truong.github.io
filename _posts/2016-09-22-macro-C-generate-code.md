@@ -1,6 +1,6 @@
 ---
 title: 'C++ Generating code with macro'
-date: 2016-08-02
+date: 2016-09-22
 permalink: /posts/2016/09/generating-code-with-macro/
 tags:
   - C++
