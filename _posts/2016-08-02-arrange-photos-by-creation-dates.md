@@ -33,10 +33,9 @@ These dates are computed from photo's creation dates. Therefore, this approach h
 The first I had to do is finding the creation date of a given file. That is achieved by utility `stat`.
 
 
-[sourcecode language="bash"]
+{% highlight shell %}
 stat -f %Sm -t %F Img1.jpeg
-[/sourcecode]
-
+{% endhighlight %}
 
 According to the manual of 'stat', option 'm' means the modified date of the file while 'B' means the birth date of the file. However, when I tested 'B' did not deliver what it was supposed to. I had to reply on an assumption that the file was untouched since it was copied from memory card ( of my camera).
 
