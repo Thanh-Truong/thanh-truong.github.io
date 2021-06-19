@@ -20,7 +20,7 @@ The Python project should include necessary files and be structured to allow [`b
 
 Let's begin to structure our project like this
 
-```
+{% highlight shell %}
 ── pyproject.toml
 ├── requirements.txt
 ├── setup.py
@@ -31,24 +31,24 @@ Let's begin to structure our project like this
 │       ├── bar.py
 │       └── main.py
 ├── sample.json
-```
+{% endhighlight %}
 
 ## `pyproject.toml` 
 `pyproject.toml` tells build tools (like `pip` and `build`) what is required to build your project. This tutorial uses `setuptools` 
 
-````
+{% highlight shell %}
 [build-system]
 requires = [
     "setuptools>=42",
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
-````
+{% endhighlight %}
 
 ## `setup.py` 
 This is a heart of packaging our Python project as it contains metadata and drives the build
 
-```
+{% highlight shell %}
 import setuptools
 from os import path
 
@@ -83,7 +83,7 @@ setuptools.setup(
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6"
 )
-```
+{% endhighlight %}
 
 The above was an example from one of mine packages and it is quite self-explanatory. There are some notes here:
   * `install_requires` contains all required packages or dependencies. It is important to lock in specific versions so your code will not break.
@@ -98,7 +98,7 @@ The above was an example from one of mine packages and it is quite self-explanat
 ## `.pypirc`
 This file resides at `~/.pypirc` containing all authentication needed to identify with pypi.org or test.pypi.org. One needs to create accounts on the two sites and fills in the `.pyirc` with account details. There are also ways to authenticate using token, but I don't find it particularly useful if you build code from your local machine.
 
-```
+{% highlight shell %}
 [distutils]
 index-servers =
   pypi
@@ -113,35 +113,38 @@ password=
 repository=https://testpypi.python.org/pypi
 username=
 password=
-```
+{% endhighlight %}
 
 # Building package
 
 List of commands 
 
-```
+{% highlight shell %}
 python -m pip install --upgrade pip
 python3 -m pip install --upgrade build
 python3 -m build
-```
+{% endhighlight %}
 
 # Uploading to PyPI or Test PyPI
 
 Install [twine](https://pypi.org/project/twine/), which is a utility for publishing Python packages on PyPI. It provides build system independent uploads of source and binary distribution artifacts.
 
-```
+{% highlight shell %}
 python3 -m pip install --upgrade twine
-```
+{% endhighlight %}
 Upload 
-````
+
+{% highlight shell %}
 python3 -m twine upload --repository testpypi dist/*
-````
+{% endhighlight %}
+
 After that, you should be able to view your newly uploaded package at https://pypi.org/ or https://test.pypi.org/
 
 # Install our package
-```
+
+{% highlight shell %}
 pip install -i https://test.pypi.org/simple/ sample
-```
+{% endhighlight %}
 
 # References
 - [https://packaging.python.org/tutorials/packaging-projects/](https://packaging.python.org/tutorials/packaging-projects/)
