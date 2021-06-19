@@ -33,7 +33,8 @@ Let's begin to structure our project like this
 ├── sample.json
 ```
 
-* `pyproject.toml` tells build tools (like `pip` and `build`) what is required to build your project. This tutorial uses `setuptools`, so open `pyproject.toml` and enter the following content:
+## `pyproject.toml` 
+`pyproject.toml` tells build tools (like `pip` and `build`) what is required to build your project. This tutorial uses `setuptools` 
 
 ````
 [build-system]
@@ -44,18 +45,67 @@ requires = [
 build-backend = "setuptools.build_meta"
 ````
 
-* `setup.py`
+## `setup.py` 
+This is a heart of packaging our Python project as it contains metadata and drives the build
 
-* `.pypirc`file contains all authentication needed to identify with pypi.org or test.pypi.org
+```
+import setuptools
+from os import path
+
+__version__ = "0.0.3"
+# Read the contents of README.md
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
+setuptools.setup(
+    name='pvclient',
+    version=__version__,
+    description="This package allows interacting with Azure Purview's REST API.",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://github.com/Thanh-Truong/purview',
+    author='Thanh Truong',
+    author_email='someone@gmail.com',
+    license='MIT',
+    install_requires = ['pyapacheatlas==0.6.0','azure-identity==1.6.0','azure-mgmt-resource==18.0.0','azure-mgmt-purview==1.0.0b1'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    entry_points={
+        'console_scripts': [
+            'purview = pvclient.purview:main'
+        ],
+    },
+    package_dir={"pvclient": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6"
+)
+```
+
+The above was an example from one of mine packages and it is quite self-explanatory. There are some notes here:
+  * `install_requires` contains all required packages or dependencies. It is important to lock in specific versions so your code will not break.
+
+  * `entry_points`or `console_scripts`. While you can do much more with `console_scripts`, this allows specifying the entry point to your "executable" program. In this example, user can invoke `purview` which is equivalent to `pvclient.purview:main`. To further explain, we have 
+    * `pvclient` as a package
+    * `purview`as a Python file
+    * finally `main` is the main entry
+
+## `.pypirc`
+This file contains all authentication needed to identify with pypi.org or test.pypi.org
 
 # Building package
-* List of commands 
+
+List of commands 
 
 ```
 python -m pip install --upgrade pip
 python3 -m pip install --upgrade build
 python3 -m build
 ```
+
 # Uploading to PyPI or Test PyPI
 
 Install twine
@@ -67,10 +117,10 @@ Upload
 python3 -m twine upload --repository testpypi dist/*
 ````
 
-* Install our package
-````
+# Install our package
+```
 pip install -i https://test.pypi.org/simple/ sample
-````
+```
 
 # References
 - https://packaging.python.org/tutorials/packaging-projects/
