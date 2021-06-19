@@ -7,7 +7,7 @@ tags:
   - appscript
   - web
 published: true
-excerpt: "Google App Script"
+excerpt: "Google Apps Script is a JavaScript development platform, where you can do more with Google products."
 ---
 # [Google App Script](https://developers.google.com/apps-script/overview)
 Google Apps Script is a JavaScript development platform, where you can do more with Google products. 

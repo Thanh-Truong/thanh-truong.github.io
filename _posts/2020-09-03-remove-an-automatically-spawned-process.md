@@ -6,7 +6,7 @@ tags:
   - osx
   - bash
 published: true
-excerpt: ""
+excerpt: "Recently I got a new computer from work and it was pre-installed with some softwares from IT support service. Some of them are useful to aid IT support to remotely install packages on my computer while some aim at collecting logs or controlling network usage. I have no problem running them when needed but they are auto launched at startup, which are unwanted background processes. And that is what I don't like about them. Killing them all does not work as they are automatically spawned mysteriously."
 ---
 This note was inspired by a [discussion](https://apple.stackexchange.com/questions/25287/how-do-you-prevent-a-process-from-automatically-restarting-specifically-sopho) on StackOverflow.
 
