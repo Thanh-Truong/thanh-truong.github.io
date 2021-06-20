@@ -14,34 +14,46 @@ Sometimes it is difficult to grasp directory structure in Linux/Ubuntu without r
 
 In the FHS, all files and directories appear under the root directory `/`, even if they are physically on different disks or devices.
 
-Directory	Description
 # Binaries and libraries
 ## System scope
 * `/bin`
-Essential command binaries that need to be available in single-user mode, including to bring up the system or repair it,[4] for all users (e.g., cat, ls, cp).
+For binaries usable before the `/usr` partition is mounted. This is used for trivial binaries used in the very early boot stage or ones that you need to have available in booting single-user mode.For example: cat, ls, cp.
+
 * `/sbin`
-Essential system binaries (e.g., fsck, init, route).
+System binaries (e.g., fsck, init, route), available for `root`
+
 * `/lib`
-Libraries essential for the binaries in /bin and /sbin.
+Libraries for the binaries in `/bin` and `/sbin`.
+
 ## User scope
+* `/usr/bin`
+Command binaries (not needed in single-user mode); for all users.
+
 * `/usr/lib`
-Libraries for the binaries in /usr/bin and /usr/sbin.
+Libraries for the binaries in `/usr/bin` and `/usr/sbin`.
+
 * `/usr/local`
-Tertiary hierarchy for local data, specific to this host. Typically has further subdirectories (e.g., bin, lib, share).[NB 1]
+It has subdirectories (e.g., bin, lib, share) for local data specifically for to the host.
+
 * `/usr/sbin`
 Non-essential system binaries (e.g., daemons for various network services).
 
-# Variable files
+## Variable files
 * `/var`
-Variable files: files whose content is expected to continually change during normal operation of the system, such as logs, spool files, and temporary e-mail files.
+Files such as logs, spool files, and temporary e-mail files, whose content are continually changed during operation of the system.
+
 * `/var/cache`
-Application cache data. Such data are locally generated as a result of time-consuming I/O or calculation. The application must be able to regenerate or restore the data. The cached files can be deleted without loss of data.
+Application cache data locally generated as during I/O or calculation.
+
 * `/var/lib`
 State information. Persistent data modified by programs as they run (e.g., databases, packaging system metadata, etc.).
+
 * `/var/lock`
 Lock files. Files keeping track of resources currently in use.
+
 * `/var/log`
-Log files. Various logs.
+Log files.
+
 * `/var/opt`
 Variable data from add-on packages that are stored in /opt.
 
@@ -66,21 +78,26 @@ Users' home directories, containing saved files, personal settings, etc.
 
 * `/media`
 Mount points for removable media such as CD-ROMs (appeared in FHS-2.3 in 2004).
-* `/mnt`
-Temporarily mounted filesystems.
+
 * `/opt`
 Add-on application software packages.[8]
+
 * `/root`
 Home directory for the root user.
 
 * `/sys`
 Contains information about devices, drivers, and some kernel features.
 * `/tmp`
-Directory for temporary files (see also /var/tmp). Often not preserved between system reboots and may be severely size-restricted.
+Directory for temporary files (see also /var/tmp), and they are not preserved between system reboots and can be size-restricted.
+
 * `/usr`
-Secondary hierarchy for read-only user data; contains the majority of (multi-)user utilities and applications. Should be shareable and read-only.[10][11]
-* `/usr/bin`
-Non-essential command binaries (not needed in single-user mode); for all users.
+Secondary hierarchy for read-only user data; contains the majority of (multi-)user utilities and applications. Should be shareable and read-only.
+
 * `/usr/include`
 Standard include files.
 
+
+# Where should I put my script ?
+The answer is none of the above. I suggest to use `/usr/local/bin` to make available for system-wide unless I use `~/bin` for user scoped script. The script and its data are located under personal home directory.
+
+Under `/usr/local` there are potentially more subdirectories to accommodate libraries or data, e.g., `/usr/local/bin`, `/usr/local/lib`, `/usr/local/share`.
