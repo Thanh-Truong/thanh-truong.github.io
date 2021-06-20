@@ -80,7 +80,7 @@ Users' home directories, containing saved files, personal settings, etc.
 Mount points for removable media such as CD-ROMs (appeared in FHS-2.3 in 2004).
 
 * `/opt`
-Add-on application software packages.[8]
+Add-on application software packages.
 
 * `/root`
 Home directory for the root user.
