@@ -18,31 +18,17 @@ There is also [Test Python Package Index](https://test.pypi.org/), which is simi
 
 The Python project should include necessary files and be structured to allow [`build`](https://pypi.org/project/build/) creating a package out of it.
 
-Let's begin to structure our project like this
+Let's begin to structure our project like this. Reference to [samplepackage](https://github.com/Thanh-Truong/samplepackage)
 
 {% highlight shell %}
-── pyproject.toml
-├── requirements.txt
-├── setup.py
-├── src
-│   └── sample
+── foo
+│   ├── __init__.py
+│   └── bar
 │       ├── __init__.py
-│       ├── foo.py
-│       ├── bar.py
 │       └── main.py
-├── sample.json
-{% endhighlight %}
-
-## `pyproject.toml` 
-`pyproject.toml` tells build tools (like `pip` and `build`) what is required to build your project. This tutorial uses `setuptools` 
-
-{% highlight shell %}
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
+├── requirements.txt
+├── samples
+└── setup.py
 {% endhighlight %}
 
 ## `setup.py` 
@@ -51,24 +37,25 @@ This is a heart of packaging our Python project as it contains metadata and driv
 {% highlight shell %}
 import setuptools
 from os import path
+from foo import __version__
 
-__version__ = "0.0.3"
 # Read the contents of README.md
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='sample',
+    name='samplepackage',
     version=__version__,
-    description="This package is an example to show how to package Python project",
+    description="This is a sample package",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/Thanh-Truong/sample-package-python',
+    url='https://github.com/Thanh-Truong/samplepackage',
     author='Thanh Truong',
-    author_email='someone@gmail.com',
+    author_email='tcthanh@gmail.com',
     license='MIT',
-    install_requires = ['request==0.6.0'],
+    packages=setuptools.find_packages(),
+    install_requires = ['requests'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -76,24 +63,20 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'sample = sample.food:main'
+            'samplepackage = foo.bar.main:main'
         ],
-    },
-    package_dir={"sample": "src"},
-    packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.6"
+    }
 )
 {% endhighlight %}
 
 The above was an example from one of mine packages and it is quite self-explanatory. There are some notes here:
   * `install_requires` contains all required packages or dependencies. It is important to lock in specific versions so your code will not break.
 
-  * `entry_points`or `console_scripts`. While you can do much more with `console_scripts`, this allows specifying the entry point to your "executable" program. In this example, user can invoke `purview` which is equivalent to `sample.foo:main`. To further explain, we have 
-    * `sample` as a package
-    * `foo`as a Python file
-    * finally `main` is the main entry
+  * `entry_points`or `console_scripts`. While you can do much more with `console_scripts`, this allows specifying the entry point to your "executable" program. In this example, user can invoke `samplepackage` which is equivalent to `foo.bar.main:main`. To further explain, we have 
+    * `foo` as a package
+    * `bar`as another package
+    * finally `main:main` is the main entry
   
-  * I find it more clear to specify also where packages are located as `package_dir={"sample": "src"}`. This shows separation from other configuration or metadata files.
 
 ## `.pypirc`
 This file resides at `~/.pypirc` containing all authentication needed to identify with pypi.org or test.pypi.org. One needs to create accounts on the two sites and fills in the `.pyirc` with account details. There are also ways to authenticate using token, but I don't find it particularly useful if you build code from your local machine.
