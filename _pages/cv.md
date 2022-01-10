@@ -46,6 +46,8 @@ table, th, td {
     - cloud services
     - <mark>machine learning</mark>
     - data infrastructure
+    - DevOps
+    - data governance: GDPR, data lineage, business glossaries, etc.
   - programming
     - C, C++
     - Python, Java, Lisp
@@ -59,7 +61,7 @@ table, th, td {
     - Agile, Kanban, or Scrum
     - Systems Development Life Cycle - Life Cycle Phases
   - tools
-    - Knowledge of Hadoop ecosystem and different frameworks: HDFS, YARN, MapReduce, Apache Pig, Hive, and Kafka.
+    - Hadoop ecosystem and different frameworks: HDFS, YARN, MapReduce, Apache Pig, Hive, and Kafka.
     - Real-time processing Framework (e.g Apache Spark, Apache Beam)
     - Google Cloud Platform: BigQuery, App Engine, etc
     - Microsoft Azure Cloud
@@ -74,9 +76,15 @@ table, th, td {
 ### Experience
 <table>
   <tr>
-    <td>Sep 2020 - present</td>
+    <td>Sep 2021 - present</td>
+    <td><b>Lead Cloud Data Engineer</b><br>
+        <i><a href="https://seb.se/" >SEB</a>, Stockholm, Sweden</i>
+    </td>
+  </tr>
+  <tr>
+    <td>Sep 2020 - Sep 2021</td>
     <td><b>Senior Data Engineer</b><br>
-        <i><a href="https://hmgroup.com/" >H&M Group</a>Stockholm, Sweden</i>
+        <i><a href="https://hmgroup.com/" >H&M Group</a>, Stockholm, Sweden</i>
     </td>
   </tr>
   <tr>
