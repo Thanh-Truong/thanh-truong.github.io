@@ -9,7 +9,7 @@ redirect_from:
 ---
 I am a software developer and a former database researcher whose passion is building data-intensive applications.
 
-I am currently working as Lead Cloud Data Engineer at [SEB](https://seb.se/), Stockholm. As responsibilities, I work with domain architect on a roadmap to build services towards Google Cloud Platform and realize the roadmap with my team. I am also mentoring and coaching others in my team. 
+I am currently working as Lead Cloud Data Engineer at [SEB](https://seb.se/), Stockholm. My primary responsibilities include working on and implementing the technical roadmap for how we want to make data available within the Savings & Investments area, and collaborating with architects and developers. Last but not least, coaching more junior colleagues is also part of my responsibilites.
 
 From September 2020 to September 2021, I worked as Senior Data Engineer (Data Magician) at [H&M Group](https://hmgroup.com/), which owns several fashion brands including [H&M](https://www2.hm.com/sv_se/index.html), [Arket](https://www.arket.com/en_sek/index.html), [Weekday](https://www.weekday.com/en_sek/index.html), [COS](https://www.cosstores.com/en_sek/index.html), [Monki](https://www.monki.com/en_sek/index.html), [H&M Home](https://www2.hm.com/sv_se/home.html), [&Other Stories](https://www.stories.com/), and [AFound](https://www.afound.com/). There, I collaboratively worked with Microsoft to develop a next generation of big dataplatform for entire H&M Group. I contributed mainly to architecture and design of data processing and data governance domains of the platform.
 
