@@ -40,6 +40,6 @@ excerpt: ""
 # Observer instructions
 
 Things to pay extra attention to:
-* 1. Does the coach help the coachee to elaborate and to be specific ?
-* 2. Does the coach take time to listen and pay attention to what's " below the surface" ?
-* 3. Does the coach take on too much responsibility for the solution ?
+* Does the coach help the coachee to elaborate and to be specific ?
+* Does the coach take time to listen and pay attention to what's " below the surface" ?
+* Does the coach take on too much responsibility for the solution ?
