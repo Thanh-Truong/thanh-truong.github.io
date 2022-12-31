@@ -17,7 +17,7 @@ Previously, I worked at [TV4](https://www.tv4.se/) and [CMore](https://www.cmore
 
 I am not quite a methodical runner yet despite that I run 5 days per week all year round. My source of inspirations and tips are from [Sverige springer](https://www.sverigespringer.se/).
 
-Recently, I have picked up on writing technical notes again. They are [here](/year-archive/). Among them, a few notes here were revived from my old Wordpress blog in between 2009 - 20016.
+Recently, I have picked up on writing technical notes again. Among them, a few notes here were revived from my old Wordpress blog in between 2009 - 20016.
 
 If it was not enough to keep me busy! I am also a father of twin girls and married to a wonderful wife.
 
